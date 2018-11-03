@@ -1,0 +1,74 @@
+body {
+  padding: 25px;
+}
+
+.border {
+  border-radius: 25px;
+  border: 3px solid black;
+  padding: 20px;
+  background-color: darkred;
+}
+
+.inner_border {
+  border: 2px solid black;
+  padding: 10px;
+  background-color: lightgray;
+  color: black;
+}
+
+.whitetext {
+  color: white;
+}
+
+.redtext {
+  color: darkred;
+}
+
+table, tr {
+  border: 1px solid black;
+  table-layout: fixed;
+  width: 100%;
+}
+
+th {
+  background-color: black;
+  padding: 3px;
+}
+
+td {
+  background-color: white;
+  color: black;
+  padding: 2px;
+}
+
+.tcol_width1 {
+  width: 25%;
+}
+
+.tcol_width2 {
+  width: 25%;
+}
+
+.tcol_width3 {
+  width: 50%;
+}
+
+.display-toggle {
+  display: inline;
+}
+
+.display-toggle-opposite {
+  display: none;
+  background-color: lightgray;
+}
+
+@media screen and (max-width: 320px) {
+  .display-toggle {
+    display: none;
+  }
+  
+  .display-toggle-opposite {
+    display: inline;
+  }
+}
+
