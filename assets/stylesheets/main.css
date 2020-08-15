@@ -1,74 +1,131 @@
+/* 
+User Story #8: The img element should responsively resize, relative to the width of its parent element, without exceeding its original size.
+
+User Story #9: The img element should be centered within its parent element.
+*/
+
 body {
-  padding: 25px;
+  background-image: url('https://images.unsplash.com/photo-1464701116432-f476204d6c45?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+  background-color: dark-gray;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no repeat;
 }
 
-.border {
-  border-radius: 25px;
-  border: 3px solid black;
-  padding: 20px;
-  background-color: darkred;
+caption, a, footer p {
+  font-family: 'Montserrat', sans-serif;
 }
 
-.inner_border {
-  border: 2px solid black;
-  padding: 10px;
-  background-color: lightgray;
-  color: black;
+h1, h2, h3, h4, h5, p, ul {
+  font-family: 'EB Garamond', serif;
 }
 
-.whitetext {
+figcaption, table, table ul {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 90%;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(230, 50%, 50%);
+}
+
+header, table, h1, h2, h3, h4, h5 {
+  margin: auto;
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: black;
   color: white;
 }
 
-.redtext {
-  color: darkred;
+#cardinals-table tbody tr {
+  text-align: left;
 }
 
-table, tr {
-  border: 1px solid black;
-  table-layout: fixed;
+th, td {
+  padding: 5px;
+  border-style: none;
+}
+
+tr:nth-child(even) {
+  background-color: hsl(0, 0%, 85%);
+}
+
+img {
+  width: 80%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  display: block;
+}
+
+#img-div {
+  margin: auto;
   width: 100%;
 }
 
-th {
-  background-color: black;
-  padding: 3px;
+figure {
+  margin: auto;
 }
 
-td {
+figcaption {
+  margin: auto;
+  text-align: center;
+  width: 80%;
+  padding: 0px 20px 20px 20px;
+}
+
+section {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  box-shadow: 
+             0 0  0 2px rgb(255,255,255),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+  padding: 20px;
+  border: 20px;
+  border-radius: 25px;
   background-color: white;
-  color: black;
-  padding: 2px;
 }
 
-.tcol_width1 {
-  width: 25%;
+footer {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
 }
 
-.tcol_width2 {
-  width: 25%;
+footer a {
+  text-decoration: none;
+  color: hsl(45, 90%, 50%);
 }
 
-.tcol_width3 {
-  width: 50%;
+#read-more, #social-media, #my-links {
+  list-style-type: none;
+  padding: 0;
 }
 
-.display-toggle {
-  display: inline;
+#read-more li, #social-media li, #my-links li {
+  padding: 10px 0 10px 0;
 }
 
-.display-toggle-opposite {
-  display: none;
-  background-color: lightgray;
-}
-
-@media screen and (max-width: 320px) {
-  .display-toggle {
-    display: none;
+@media screen and (min-width: 1200px) {
+  
+  section {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
   
-  .display-toggle-opposite {
-    display: inline;
-  }
 }
-
